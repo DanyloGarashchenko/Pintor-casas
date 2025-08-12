@@ -1,0 +1,148 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintor de casas - Pinturas e Tratamento de Humidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Pintor de casas</h2>
+            </div>
+            <ul class="nav-menu">
+    		<li><a href="#sobre">Sobre Nós</a></li>
+    		<li><a href="#galeria">Galeria</a></li>
+    		<li><a href="#contactos">Contactos</a></li>
+	    </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Secção Principal -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Transformamos a Sua Casa</h1>
+            <p>Especialistas em pinturas e tratamentos de humidades</p>
+            <a href="#contactos" class="btn-primary">Orçamento Grátis</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Somos uma empresa especializada em pinturas e limpeza de humidades, dedicada a transformar os seus espaços com qualidade e profissionalismo.</p>
+                    <p>Com uma equipa experiente e materiais de primeira qualidade, garantimos resultados excepcionais em cada projeto. <strong>Todos os orçamentos são gratuitos e sem compromisso!</strong></p>
+                    <div class="servicos">
+                        <h3>Os Nossos Serviços:</h3>
+                        <ul>
+                            <li>Pintura interior e exterior</li>
+                            <li>Pintura de fachadas</li>
+                            <li>Pintura decorativa</li>
+                            <li>Tratamento de humidades</li>
+                            <li>Reparação e preparação de paredes</li>
+                            <li>Pintura de chão de garagens (EPOXY)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sobre-img">
+                    <img src="https://i.postimg.cc/Z5N2zC0S/pintura.jpg" alt="Equipa trabalhando">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="section bg-light">
+        <div class="container">
+            <h2>Galeria dos Nossos Trabalhos</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item" onclick="openModal('https://i.postimg.cc/G2x8HtyZ/180517f8-5ca5-4ce8-b60d-d59b6f890d7f.jpg')">
+                    <img src="https://i.postimg.cc/G2x8HtyZ/180517f8-5ca5-4ce8-b60d-d59b6f890d7f.jpg" alt="Pintura sala">
+                    <div class="overlay">
+                        <span>Pintura de Sala</span>
+                    </div>
+                </div>
+                <div class="galeria-item" onclick="openModal('https://i.postimg.cc/rwjPCNLm/IMG_5888.jpg')">
+                    <img src="https://i.postimg.cc/rwjPCNLm/IMG_5888.jpg" alt="Pintura decorativa (antes)">
+                    <div class="overlay">
+                        <span>Pintura decorativa (antes)</span>
+                    </div>
+                </div>
+                <div class="galeria-item" onclick="openModal('https://i.postimg.cc/gjrzm2qy/47b0af51-284e-4b71-ab9a-e7d34efbe838.jpg')">
+                    <img src="https://i.postimg.cc/gjrzm2qy/47b0af51-284e-4b71-ab9a-e7d34efbe838.jpg" alt="Pintura exterior">
+                    <div class="overlay">
+                        <span>Pintura exterior</span>
+                    </div>
+                </div>
+                <div class="galeria-item" onclick="openModal('https://i.postimg.cc/k4mRJKBQ/f6537034-dacf-4cf1-8693-81bd9b31f4ff.jpg')">
+                    <img src="https://i.postimg.cc/k4mRJKBQ/f6537034-dacf-4cf1-8693-81bd9b31f4ff.jpg" alt="Pintura decorativa (depois)">
+                    <div class="overlay">
+                        <span>Pintura decorativa (depois)</span>
+                    </div>
+                </div>
+                <div class="galeria-item" onclick="openModal('https://i.postimg.cc/hPqyk5Dv/879a8d32-97f1-443c-81c0-c28cc77db0a4.jpg')">
+                    <img src="https://i.postimg.cc/hPqyk5Dv/879a8d32-97f1-443c-81c0-c28cc77db0a4.jpg" alt="Quarto pintado">
+                    <div class="overlay">
+                        <span>Pintura decorativa (depois)</span>
+                    </div>
+                </div>
+                <div class="galeria-item" onclick="openModal('https://i.postimg.cc/1zc5KT3F/8c76d620-95a0-40fe-88d1-b7fc4bd3bc6e.jpg')">
+                    <img src="https://i.postimg.cc/1zc5KT3F/8c76d620-95a0-40fe-88d1-b7fc4bd3bc6e.jpg" alt="Pintura interior">
+                    <div class="overlay">
+                        <span>Pintura interior</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+    </section>
+
+    <!-- Modal para Galeria -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Contactos -->
+    <section id="contactos" class="section">
+        <div class="container">
+            <h2>Contactos</h2>
+            <div class="contactos-info">
+                <div class="contacto-item">
+                    <h3>📞 Telefone</h3>
+                    <p><a href="tel:+351939299783">+351 939 299 783</a></p>
+                    <small>Ligue-nos diretamente</small>
+                </div>
+                <div class="contacto-item">
+                    <h3>💬 WhatsApp</h3>
+                    <p><a href="https://wa.me/351912117013" target="_blank">+351 912 117 013</a></p>
+                    <small>Envie mensagem</small>
+                </div>
+                <div class="contacto-item">
+                    <h3>✉️ Email</h3>
+                    <p><a href="mailto:hugofcp25@gmail.com">hugofcp25@gmail.com</a></p>
+                    <small>Envie-nos um email</small>
+                </div>
+                <div class="contacto-item destaque">
+                    <h3>🆓 Orçamento Grátis</h3>
+                    <p>Todos os orçamentos são <strong>gratuitos</strong> e sem compromisso!</p>
+                    <small>Contacte-nos por qualquer meio</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
